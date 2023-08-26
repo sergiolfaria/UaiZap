@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import ListaMensagens from './components/ListaMensagens';
 import FormularioMensagem from './components/FormularioMensagem';
-import './App.css';
+
 
 function App() {
+  
   const [mensagens, setMensagens] = useState([]);
 
   const adicionarMensagem = (mensagem) => {
@@ -16,7 +17,9 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div>
+    
+  
       <ListaMensagens mensagens={mensagens} deletarMensagem={deletarMensagem} />
       <FormularioMensagem adicionarMensagem={adicionarMensagem} />
     </div>
