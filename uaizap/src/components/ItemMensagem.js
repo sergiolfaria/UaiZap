@@ -5,7 +5,7 @@ const MensagemContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   margin: 10px;
 `;
 

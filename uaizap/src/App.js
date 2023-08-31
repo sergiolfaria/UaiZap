@@ -1,10 +1,22 @@
 import React, { useState } from 'react';
 import ListaMensagens from './components/ListaMensagens';
 import FormularioMensagem from './components/FormularioMensagem';
+import styled from 'styled-components';
 
 
+const Container = styled.div`
+  border: none;
+  color: #ffff;
+  padding:10px;
+  background-color: #FFF;
+  width:70%;
+`
+const Div2 = styled.div`
+  display:flex;
+  justify-content:center;
+`
 function App() {
-  
+
   const [mensagens, setMensagens] = useState([]);
 
   const adicionarMensagem = (mensagem) => {
@@ -17,12 +29,13 @@ function App() {
   };
 
   return (
-    <div>
-    
-  
-      <ListaMensagens mensagens={mensagens} deletarMensagem={deletarMensagem} />
+    <Div2>
+      <Container>
+        <ListaMensagens mensagens={mensagens} deletarMensagem={deletarMensagem} />
+
+      </Container>
       <FormularioMensagem adicionarMensagem={adicionarMensagem} />
-    </div>
+    </Div2>
   );
 }
 
