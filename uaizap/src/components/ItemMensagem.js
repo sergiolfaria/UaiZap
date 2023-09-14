@@ -38,15 +38,16 @@ const BotaoDeletar = styled.button`
 `;
 
 function ItemMensagem({ mensagem, onDelete }) {
-  const SouEu = mensagem.remetente === 'eu';
+ 
+  const SouEu = mensagem.remetente.toLowerCase().trim() === 'eu';
 
   return (
     <MensagemContainer SouEu={SouEu}>
       <BackgroundDaMsg SouEu={SouEu}>
         {!SouEu && <Remetente>{mensagem.remetente} :</Remetente>}
-        <ConteudoMensagem SouEu={SouEu}>{mensagem.conteudo}</ConteudoMensagem>
+        <ConteudoMensagem onDoubleClick={onDelete} SouEu={SouEu}>{mensagem.conteudo}</ConteudoMensagem>
       </BackgroundDaMsg>
-      <BotaoDeletar onClick={onDelete}>Deletar</BotaoDeletar>
+      
     </MensagemContainer>
   );
 }

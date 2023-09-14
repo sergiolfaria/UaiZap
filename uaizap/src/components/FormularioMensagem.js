@@ -25,7 +25,9 @@ const Input = styled.input`
   background-color: #2a3942;
   font-size: 14px;
   margin-right: 10px;
+ 
 `;
+
 
 const BotaoEnviar = styled.button`
   border: none;
@@ -37,18 +39,21 @@ const BotaoEnviar = styled.button`
   cursor: pointer;
 `;
 
-function FormularioMensagem({ adicionarMensagem }) {
+function FormularioMensagem({ adicionarMensagem, }) {
   const [remetente, setRemetente] = useState('');
   const [conteudo, setConteudo] = useState('');
 
   const Submit = (e) => {
     e.preventDefault();
-    if (remetente && conteudo) {
-      adicionarMensagem({ remetente, conteudo });
-      setRemetente('');
-      setConteudo('');
+    if (remetente.trim() && conteudo.trim() != null || '') {
+      if (remetente && conteudo) {
+        adicionarMensagem({ remetente, conteudo });
+        setRemetente('');
+        setConteudo('');
+      }
     }
   };
+
 
   return (
     <Formulario onSubmit={Submit}>
@@ -57,6 +62,8 @@ function FormularioMensagem({ adicionarMensagem }) {
         placeholder="Remetente"
         value={remetente}
         onChange={(e) => setRemetente(e.target.value)}
+
+
       />
       <Input
         type="text"
