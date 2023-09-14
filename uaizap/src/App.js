@@ -6,11 +6,13 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   border: none;
-  color: #ffff;
-  padding:10px;
-  background-color: #FFF;
-  width:70%;
-`
+  color: #fff;
+  padding: 10px;
+  background-color: #fff;
+  width: 70%;
+  height: 96vh;
+`;
+
 const Div2 = styled.div`
   display:flex;
   justify-content:center;

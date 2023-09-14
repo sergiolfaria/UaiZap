@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const MensagemContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: ${({ SouEu }) => (SouEu ? 'flex-end' : 'flex-start')};
   align-items: center;
   margin: 10px;
 `;
@@ -16,13 +16,13 @@ const Remetente = styled.span`
 
 const ConteudoMensagem = styled.span`
   color: #ddd;
-  background-color: #2a3942;
+  background-color: ${({ SouEu }) => (SouEu ? '#128c7e' : '#2a3942')};
   padding: 1vh;
   border-radius: 8px;
 `;
 
 const BackgroundDaMsg = styled.div`
-  background-color: #2a3942;
+  background-color: ${({ SouEu }) => (SouEu ? '#128c7e' : '#2a3942')};
   padding: 1vh;
   border-radius: 8px;
 `;
@@ -38,11 +38,13 @@ const BotaoDeletar = styled.button`
 `;
 
 function ItemMensagem({ mensagem, onDelete }) {
+  const SouEu = mensagem.remetente === 'eu';
+
   return (
-    <MensagemContainer>
-      <BackgroundDaMsg>
-        <Remetente>{mensagem.remetente} :</Remetente>
-        <ConteudoMensagem>{mensagem.conteudo}</ConteudoMensagem>
+    <MensagemContainer SouEu={SouEu}>
+      <BackgroundDaMsg SouEu={SouEu}>
+        {!SouEu && <Remetente>{mensagem.remetente} :</Remetente>}
+        <ConteudoMensagem SouEu={SouEu}>{mensagem.conteudo}</ConteudoMensagem>
       </BackgroundDaMsg>
       <BotaoDeletar onClick={onDelete}>Deletar</BotaoDeletar>
     </MensagemContainer>

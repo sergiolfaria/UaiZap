@@ -6,7 +6,7 @@ const Formulario = styled.form`
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
+  width: 70.1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +41,7 @@ function FormularioMensagem({ adicionarMensagem }) {
   const [remetente, setRemetente] = useState('');
   const [conteudo, setConteudo] = useState('');
 
-  const handleSubmit = (e) => {
+  const Submit = (e) => {
     e.preventDefault();
     if (remetente && conteudo) {
       adicionarMensagem({ remetente, conteudo });
@@ -51,7 +51,7 @@ function FormularioMensagem({ adicionarMensagem }) {
   };
 
   return (
-    <Formulario onSubmit={handleSubmit}>
+    <Formulario onSubmit={Submit}>
       <Input
         type="text"
         placeholder="Remetente"
