@@ -25,6 +25,7 @@ const Input = styled.input`
   background-color: #2a3942;
   font-size: 14px;
   margin-right: 10px;
+  
  
 `;
 
@@ -45,7 +46,7 @@ function FormularioMensagem({ adicionarMensagem, }) {
 
   const Submit = (e) => {
     e.preventDefault();
-    if (remetente.trim() && conteudo.trim() != null || '') {
+    if (remetente.trim() && conteudo.trim() != null) {
       if (remetente && conteudo) {
         adicionarMensagem({ remetente, conteudo });
         setRemetente('');

@@ -19,23 +19,16 @@ const ConteudoMensagem = styled.span`
   background-color: ${({ SouEu }) => (SouEu ? '#128c7e' : '#2a3942')};
   padding: 1vh;
   border-radius: 8px;
+  cursor:pointer;
 `;
 
 const BackgroundDaMsg = styled.div`
   background-color: ${({ SouEu }) => (SouEu ? '#128c7e' : '#2a3942')};
   padding: 1vh;
   border-radius: 8px;
+  cursor:pointer;
 `;
 
-const BotaoDeletar = styled.button`
-  border: none;
-  background-color: #128c7e;
-  color: #ddd;
-  font-size: 12px;
-  cursor: pointer;
-  padding: 1vh;
-  border-radius: 8px;
-`;
 
 function ItemMensagem({ mensagem, onDelete }) {
  
