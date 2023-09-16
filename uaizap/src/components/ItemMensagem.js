@@ -20,6 +20,7 @@ const ConteudoMensagem = styled.span`
   padding: 1vh;
   border-radius: 8px;
   cursor:pointer;
+ 
 `;
 
 const BackgroundDaMsg = styled.div`
@@ -27,6 +28,7 @@ const BackgroundDaMsg = styled.div`
   padding: 1vh;
   border-radius: 8px;
   cursor:pointer;
+ 
 `;
 
 
@@ -36,9 +38,9 @@ function ItemMensagem({ mensagem, onDelete }) {
 
   return (
     <MensagemContainer SouEu={SouEu}>
-      <BackgroundDaMsg SouEu={SouEu}>
+      <BackgroundDaMsg SouEu={SouEu} onDoubleClick={onDelete}>
         {!SouEu && <Remetente>{mensagem.remetente} :</Remetente>}
-        <ConteudoMensagem onDoubleClick={onDelete} SouEu={SouEu}>{mensagem.conteudo}</ConteudoMensagem>
+        <ConteudoMensagem SouEu={SouEu}>{mensagem.conteudo}</ConteudoMensagem>
       </BackgroundDaMsg>
       
     </MensagemContainer>
