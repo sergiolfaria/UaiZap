@@ -2,7 +2,7 @@ import React from 'react';
 import ItemMensagem from './ItemMensagem';
 import styled from 'styled-components';
 const ListaMensagensContainer = styled.div`
-  max-height: 89vh; 
+  max-height: 85vh; 
   overflow-y: auto; 
   
   &::-webkit-scrollbar {

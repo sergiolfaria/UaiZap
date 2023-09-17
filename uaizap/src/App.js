@@ -39,13 +39,14 @@ const FormularioContainer = styled.div`
   border-top: 1px solid black;
   box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
   margin-top: auto;
-  margin-bottom:1%;
+  margin-bottom:3%;
   width: 100%; 
 `;
 const MsgContainer = styled.div`
    margin-top: auto;
    display: flex;
    justify-content:center;
+   
 `;
 
 function App() {

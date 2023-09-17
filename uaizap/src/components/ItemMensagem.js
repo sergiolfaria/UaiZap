@@ -14,35 +14,42 @@ const Remetente = styled.span`
   color: #fff;
 `;
 
-const ConteudoMensagem = styled.span`
+const ConteudoMensagem = styled.div`
   color: #ddd;
-  background-color: ${({ SouEu }) => (SouEu ? '#128c7e' : '#2a3942')};
-  padding: 1vh;
   border-radius: 8px;
-  cursor:pointer;
- 
+  cursor: pointer;
+  white-space: pre-wrap; 
 `;
 
 const BackgroundDaMsg = styled.div`
   background-color: ${({ SouEu }) => (SouEu ? '#128c7e' : '#2a3942')};
   padding: 1vh;
   border-radius: 8px;
-  cursor:pointer;
- 
+  cursor: pointer;
 `;
 
+function quebrarTexto(texto, tamanhoMaximo) {
+  const textoSemEspacosExcessivos = texto.replace(/\s+/g, ' ');
+
+  const substrings = [];
+  for (let i = 0; i < textoSemEspacosExcessivos.length; i += tamanhoMaximo) {
+    substrings.push(textoSemEspacosExcessivos.slice(i, i + tamanhoMaximo));
+  }
+  return substrings;
+}
 
 function ItemMensagem({ mensagem, onDelete }) {
- 
   const SouEu = mensagem.remetente.toLowerCase().trim() === 'eu';
+  const conteudoQuebrado = quebrarTexto(mensagem.conteudo, 70);
 
   return (
     <MensagemContainer SouEu={SouEu}>
       <BackgroundDaMsg SouEu={SouEu} onDoubleClick={onDelete}>
-        {!SouEu && <Remetente>{mensagem.remetente} :</Remetente>}
-        <ConteudoMensagem SouEu={SouEu}>{mensagem.conteudo}</ConteudoMensagem>
+        {!SouEu && <Remetente>{mensagem.remetente}:</Remetente>}
+        {conteudoQuebrado.map((linha, index) => (
+          <ConteudoMensagem key={index} SouEu={SouEu}>{linha}</ConteudoMensagem>
+        ))}
       </BackgroundDaMsg>
-      
     </MensagemContainer>
   );
 }
