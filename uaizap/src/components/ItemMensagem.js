@@ -40,7 +40,7 @@ function quebrarTexto(texto, tamanhoMaximo) {
 
 function ItemMensagem({ mensagem, onDelete }) {
   const SouEu = mensagem.remetente.toLowerCase().trim() === 'eu';
-  const conteudoQuebrado = quebrarTexto(mensagem.conteudo, 70);
+  const conteudoQuebrado = quebrarTexto(mensagem.conteudo, 50);
 
   return (
     <MensagemContainer SouEu={SouEu}>
