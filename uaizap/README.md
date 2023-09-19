@@ -14,7 +14,7 @@ Os usuários podem excluir mensagens clicando duas vezes na mensagem que desejam
 ### **4. Estilização**
 O aplicativo utiliza o styled-components para criar estilos personalizados, incluindo um plano de fundo de gradiente e estilos de mensagens personalizados.
 
-### **Tecnologias Utilizadas**
+### **Tecnologias Utilizadas:**
 As principais tecnologias utilizadas neste projeto incluem:
 
 React: A biblioteca JavaScript para criar interfaces de usuário.
