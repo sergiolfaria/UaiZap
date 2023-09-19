@@ -39,7 +39,8 @@ Navegue até a pasta do projeto:
 cd uaizap
 Instale as dependências do projeto:
 
-npm install
+npm install ou instale separadamente os pacotes 
+
 Inicie o aplicativo:
 
 npm start
