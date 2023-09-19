@@ -29,14 +29,16 @@ Surge: Utilizado para fazer o deploy do aplicativo.
 
 Para iniciar o projeto em sua máquina, siga os passos abaixo ou utilize o link do surge e veja o app de forma online :
 
-https://chilly-apparatus.surge.sh/
+link do surge: https://chilly-apparatus.surge.sh/
 
 Clone o repositório para o seu computador:
 
 git clone https://github.com/sergiolfaria/UaiZap.git
+
 Navegue até a pasta do projeto:
 
 cd uaizap
+
 Instale as dependências do projeto:
 
 npm install ou instale separadamente os pacotes 
@@ -44,6 +46,7 @@ npm install ou instale separadamente os pacotes
 Inicie o aplicativo:
 
 npm start
+
 O aplicativo será aberto em seu navegador padrão. Você pode começar a usar o aplicativo de mensagens.
 
 Lembre-se de que este é apenas um exemplo de projeto e pode ser personalizado e estendido de acordo com suas necessidades específicas.
