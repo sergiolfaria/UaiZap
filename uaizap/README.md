@@ -27,9 +27,9 @@ Surge: Utilizado para fazer o deploy do aplicativo.
 
 ## **Como Iniciar o Projeto**
 
-Para iniciar o projeto em sua máquina, siga os passos abaixo ou utilize o link do surge e veja o app de forma online 
+Para iniciar o projeto em sua máquina, siga os passos abaixo ou utilize o link do surge e veja o app de forma online :
 
-https://chilly-apparatus.surge.sh/:
+https://chilly-apparatus.surge.sh/
 
 Clone o repositório para o seu computador:
 
