@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+UaiZap
+ é um projeto de exemplo de um aplicativo de mensagens construído com React. Ele inclui várias funcionalidades e tecnologias para criar uma experiência de bate-papo simples. Abaixo, você encontrará uma descrição das principais funcionalidades e as tecnologias utilizadas no projeto.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Funcionalidades
+1. Exibição de Mensagens
+O aplicativo exibe mensagens em uma interface de bate-papo estilo lista. As mensagens são exibidas em ordem, com o remetente identificado.
 
-## Available Scripts
+2. Adição de Mensagens
+Os usuários podem adicionar novas mensagens ao preencher o remetente e o conteúdo da mensagem e clicar no botão "Enviar".
 
-In the project directory, you can run:
+3. Deleção de Mensagens
+Os usuários podem excluir mensagens clicando duas vezes na mensagem que desejam excluir.
 
-### `npm start`
+4. Estilização
+O aplicativo utiliza o styled-components para criar estilos personalizados, incluindo um plano de fundo de gradiente e estilos de mensagens personalizados.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Tecnologias Utilizadas
+As principais tecnologias utilizadas neste projeto incluem:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React: A biblioteca JavaScript para criar interfaces de usuário.
 
-### `npm test`
+styled-components: Uma biblioteca para estilização com componentes JavaScript.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+FontAwesome: Uma biblioteca de ícones para adicionar ícones às mensagens.
 
-### `npm run build`
+Surge: Utilizado para fazer o deploy do aplicativo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Como Iniciar o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para iniciar o projeto em sua máquina, siga os passos abaixo ou utilize o link do surge e veja o app de forma online https://chilly-apparatus.surge.sh/:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone o repositório para o seu computador:
 
-### `npm run eject`
+git clone https://github.com/sergiolfaria/UaiZap.git
+Navegue até a pasta do projeto:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd uaizap
+Instale as dependências do projeto:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install
+Inicie o aplicativo:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm start
+O aplicativo será aberto em seu navegador padrão. Você pode começar a usar o aplicativo de mensagens.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Lembre-se de que este é apenas um exemplo de projeto e pode ser personalizado e estendido de acordo com suas necessidades específicas.

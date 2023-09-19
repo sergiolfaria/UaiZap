@@ -18,6 +18,7 @@ const Input = styled.input`
   background-color: #2a3942;
   font-size: 14px;
   margin-right: 10px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 6px 6px;
 `;
 
 const BotaoEnviar = styled.button`
@@ -28,6 +29,7 @@ const BotaoEnviar = styled.button`
   border-radius: 20px;
   font-size: 14px;
   cursor: pointer;
+  box-shadow: rgb(0 0 0 / 24%) 0px 6px 6px;
 `;
 
 const IconeModificador = styled.div`

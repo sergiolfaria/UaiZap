@@ -28,6 +28,7 @@ const BackgroundDaMsg = styled.div`
   cursor: pointer;
 `;
 
+
 function quebrarTexto(texto, tamanhoMaximo) {
   const textoSemEspacosExcessivos = texto.replace(/\s+/g, ' ');
 
@@ -39,6 +40,10 @@ function quebrarTexto(texto, tamanhoMaximo) {
 }
 
 function ItemMensagem({ mensagem, onDelete }) {
+  if (!mensagem.conteudo || mensagem.conteudo.trim() === "") {
+    return null; 
+  }
+  
   const SouEu = mensagem.remetente.toLowerCase().trim() === 'eu';
   const conteudoQuebrado = quebrarTexto(mensagem.conteudo, 50);
 
