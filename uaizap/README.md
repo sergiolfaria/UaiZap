@@ -25,7 +25,7 @@ FontAwesome: Uma biblioteca de ícones para adicionar ícones às mensagens.
 
 Surge: Utilizado para fazer o deploy do aplicativo.
 
-**Como Iniciar o Projeto**
+## **Como Iniciar o Projeto**
 
 Para iniciar o projeto em sua máquina, siga os passos abaixo ou utilize o link do surge e veja o app de forma online 
 
