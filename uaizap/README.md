@@ -41,7 +41,20 @@ cd uaizap
 
 Instale as dependências do projeto:
 
-npm install ou instale separadamente os pacotes 
+npm install 
+
+caso tenha problemas instale as seguintes bibliotecas:
+
+npm install styled-components
+
+npm install --save @fortawesome/react-fontawesome
+
+npm install --save @fortawesome/fontawesome-svg-core
+
+npm install --save @fortawesome/free-solid-svg-icons
+
+npm install -g surge
+
 
 Inicie o aplicativo:
 
